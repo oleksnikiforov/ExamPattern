@@ -6,10 +6,15 @@ public class Main {
         Cake cake = new Cake();
 
         cake.addFilling(new Chocolate());
-        cake.addFilling(new Cream());
         cake.addFilling(new Frosting());
-        cake.addFilling(new Raisins());
 
         System.out.println(cake);
+
+        Cake cake2 = new Cake();
+
+        cake2.addFilling(new Cream());
+        cake2.addFilling(new Raisins());
+
+        System.out.println(cake2);
     }
 }

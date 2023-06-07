@@ -17,12 +17,11 @@ public class Cake {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Cake with fillings:");
+        StringBuilder result = new StringBuilder();
+        result.append("Cake with fillings:");
         for (Filling filling : fillings) {
-            sb.append(" ");
-            sb.append(filling.getRecipe());
+           result.append(" ").append(filling.getRecipe());
         }
-        return sb.toString();
+        return result.toString();
     }
 }
